@@ -18,14 +18,15 @@ const rl = readLine.createInterface({
 //     output: process.stdout
 // });
 
+// ini belum pake push data
+// nanti coba di push
+
 rl.question('Masukkan Nama Anda : ', (answerSatu) => {
     rl.question('Masukkan Umur Anda : ', (answerDua) => {
         console.log(`Pertanyaan Selesai`);
         inputJson(answerSatu, answerDua);
         rl.close();
     });
-
-
 
 })
 
