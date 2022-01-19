@@ -1,0 +1,26 @@
+<h1>Mahasiswa</h1>
+<div class="contain">
+    <a href="/mahasiswa/tambah" class="btn btn-primary">Tambah</a>
+    <table class="table table-striped">
+        <thead>
+            <th>No</th>
+            <th>Nim</th>
+            <th>Nama</th>
+            <th>Option</th>
+        </thead>
+        <tbody>
+            <% mahasiswa.forEach((mhs, i) => { %>
+            <tr>
+                <td><%= i + 1 %> </td>
+                <td><%= mhs.nim %> </td>
+                <td><%= mhs.name %> </td>
+                <td>
+                    <a href="/mahasiswa/ubah/<%= mhs.nim %>" class="btn btn-primary">Ubah</a>
+                    <a href="/mahasiswa/hapus/<%= mhs.nim %>" class="btn btn-danger">Hapus</a>
+                </td>
+            </tr>
+            <%  }) %>
+
+        </tbody>
+    </table>
+</div>
